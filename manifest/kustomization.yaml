@@ -1,0 +1,11 @@
+resources:
+  - ./deployment.yaml
+  - ./service.yaml
+  - ./ingress.yaml
+
+secretGenerator:
+- name: portfolio-tls-secret
+  type: kubernetes.io/tls
+  files:
+  - tls.crt=secrets/tls/tls.crt
+  - tls.key=secrets/tls/tls.key
