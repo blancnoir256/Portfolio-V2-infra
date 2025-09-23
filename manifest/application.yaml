@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/blancnoir256/Portfolio-V2-infra' # ★ manifest-repoのURL
+    repoURL: 'https://github.com/blancnoir256/Portfolio-V2-infra'
     targetRevision: HEAD # mainブランチを監視
     path: . # リポジトリのルートディレクトリを参照
   destination:
