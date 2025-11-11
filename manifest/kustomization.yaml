@@ -4,7 +4,7 @@ resources:
   - ./ingress.yaml
 
 secretGenerator:
-- name: portfolio-tls-secret
+- name: bn256-portfolio-tls-secret
   type: kubernetes.io/tls
   files:
   - tls.crt=secrets/tls.crt
