@@ -12,6 +12,8 @@ spec:
       labels:
         app: bn256-portfolio
     spec:
+      imagePullSecrets:
+        - name: bn256-portfolio-ghcr-secret
       containers:
       - name: bn256-portfolio
         image: bn256-portfolio
