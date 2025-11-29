@@ -4,17 +4,17 @@ metadata:
   name: portfolio-ingress
 spec:
   rules:
-    - host: bn256.dev
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: portfolio-service
-                port:
-                  number: 80
+  - host: bn256.dev
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: portfolio-service
+            port:
+              number: 80
   tls:
-    - hosts:
-        - bn256.dev
-      secretName: portfolio-tls-secret
+  - hosts:
+    - bn256.dev
+    secretName: portfolio-tls-secret

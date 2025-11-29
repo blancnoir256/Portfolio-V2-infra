@@ -13,8 +13,8 @@ spec:
         app: portfolio
     spec:
       containers:
-        - name: portfolio
-          image: portfolio
-          imagePullPolicy: Always
-          ports:
-            - containerPort: 8080
+      - name: portfolio
+        image: portfolio:1.1.1
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8080

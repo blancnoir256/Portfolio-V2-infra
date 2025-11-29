@@ -11,8 +11,8 @@ images:
     newName: ghcr.io/blancnoir256/portfolio-v2-application:sha256-5f7eda640712267ead334928df82599b72d0b3ad5d6cf80386b3c6224faae050
 
 secretGenerator:
-  - name: portfolio-tls-secret
-    type: kubernetes.io/tls
-    files:
-      - tls.crt=secrets/tls/tls.crt
-      - tls.key=secrets/tls/tls.key
+- name: portfolio-tls-secret
+  type: kubernetes.io/tls
+  files:
+  - tls.crt=secrets/tls.crt
+  - tls.key=secrets/tls.key
