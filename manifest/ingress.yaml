@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: portfolio-ingress
+  name: bn256-portfolio-ingress
 spec:
   rules:
   - host: bn256.dev
@@ -11,10 +11,10 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: portfolio-service
+            name: bn256-portfolio-service
             port:
               number: 80
   tls:
   - hosts:
     - bn256.dev
-    secretName: portfolio-tls-secret
+    secretName: bn256-portfolio-tls-secret
