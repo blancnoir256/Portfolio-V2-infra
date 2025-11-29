@@ -22,5 +22,5 @@ secretGenerator:
   - tls.key=secrets/tls.key
 - name: bn256-portfolio-ghcr-secret
   type: kubernetes.io/dockerconfigjson
-  files: 
-    - ./secrets/dockerconfig.json
+  files:
+    - .dockerconfigjson=secrets/dockerconfig.json
