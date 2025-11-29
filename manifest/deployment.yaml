@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: bn256-portfolio
-        image: bn256-portfolio:1.1.1
-        imagePullPolicy: Never
+        image: bn256-portfolio
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
