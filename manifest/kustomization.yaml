@@ -9,7 +9,7 @@ resources:
 images:
 - name: bn256-portfolio
   newName: ghcr.io/blancnoir256/Portfolio-V2-application
-  newTag: main
+  newTag: v0.1.0
 
 generatorOptions:
   disableNameSuffixHash: true
