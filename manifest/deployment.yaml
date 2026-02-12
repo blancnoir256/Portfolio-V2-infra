@@ -15,15 +15,15 @@ spec:
       imagePullSecrets:
         - name: bn256-portfolio-ghcr-secret
       containers:
-      - name: bn256-portfolio
-        image: bn256-portfolio
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 8080
-        resources:
-          requests:
-            memory: "64Mi"
-            cpu: "50m"
-          limits:
-            memory: "256Mi"
-            cpu: "300m"
+        - name: bn256-portfolio
+          image: bn256-portfolio
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "50m"
+            limits:
+              memory: "256Mi"
+              cpu: "300m"

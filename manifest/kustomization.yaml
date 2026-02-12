@@ -5,22 +5,10 @@ resources:
   - ./deployment.yaml
   - ./service.yaml
   - ./ingress.yaml
+  - ./sealed-secrets/sealed-tls.yaml
+  - ./sealed-secrets/sealed-dockerconfig.yaml
 
 images:
   - name: bn256-portfolio
     newName: ghcr.io/blancnoir256/portfolio-v2-application
     newTag: latest
-
-generatorOptions:
-  disableNameSuffixHash: true
-
-secretGenerator:
-- name: bn256-portfolio-tls-secret
-  type: kubernetes.io/tls
-  files:
-  - tls.crt=secrets/tls.crt
-  - tls.key=secrets/tls.key
-- name: bn256-portfolio-ghcr-secret
-  type: kubernetes.io/dockerconfigjson
-  files:
-    - .dockerconfigjson=secrets/dockerconfig.json

@@ -1,0 +1,14 @@
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  name: bn256-portfolio-ghcr-secret
+  namespace: default
+spec:
+  encryptedData:
+    .dockerconfigjson: AgCK61t2Zqtr7RbLACuMqDgk/izINx+RqVafs1qdarHxIC1iw+p99o+gdYp5vYS9QsjokVriruACTI/tSw5KdmP/jdQZHm49jVlgEErOHlcXZlNDCqwq0B0/qP8mr4eD1pi/cenkDNtgZ3wMQzBboVV7e1vGmcSZwYKLz5YpFwoEed94lrZLaKYkTbPAimoO9ZzQWzw+7RG8XePhYTIG2RY1XW97Hf++cdCW6MRoErZa36kr/MSWvtqhmWZXNyGyySBCwuRi1G2ICMGEUP2s3kmRsfkCYOrp2Tks0Y1v3fH1Vzlx/9WtddnpoBm/NnxVOkWVAnv7kywqEw4OZFQdU9ZT7pHSIGqsrRL0Flc/SnLNJHroMXXj/Q8Pl8PtiA/0RLXOsJM6f23nKm6uMkdsVvUwvVe7jDJFIpGo1Ctnv8DrDSSQxHnq4DR1z/91/+OQHJZ7AbdmxqwVje6Ippi1FiNO+ySxLXzhhDbg6yw4M3RmwJ5U079JwmjlkWV1bgGOW1yQK3HVEqD002Hs26WWx12B1Q7UVsPUz6biiKI8NURK62CKlAWY+FgvYmoMCJtzo2mqUXsgKqCaDVbyErfmMA95WxZWYJq00Tx1yGJ/eemycldo4/FKDrif3lHz1pmdvSwWGXWik+SLn20+8tRTRuA9Pet83QUuDSw3w0JJeoEIDYce4NeeqmIFmhJQqOnPykb8IGZaLxMicXFh0zzvO0FvRlnsZ19pfQnJQr/1sha/WVWMyj6t1rPnPZpLYoHErohFSmEBBFB+UUAjOITHRuSGvvv7yXhe2yL4A01TRo7DEBMdGVb/XOgV+b3lJuDji1wGT8MIX/+gLRDYQMR63YTUFZSQglXQf6fHMaP9JkQpq+q66vDZJ6giUIHAy1MNqpanxBv79W3HAroJtOkY+aC73YrUSSdCb0JFdrth3w==
+  template:
+    metadata:
+      name: bn256-portfolio-ghcr-secret
+      namespace: default
+    type: kubernetes.io/dockerconfigjson
