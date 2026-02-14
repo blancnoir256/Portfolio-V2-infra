@@ -13,4 +13,4 @@ resources:
 images:
 - name: bn256-portfolio
   newName: ghcr.io/blancnoir256/Portfolio-V2-application
-  newTag: v0.1.1
+  newTag: v0.1.2
