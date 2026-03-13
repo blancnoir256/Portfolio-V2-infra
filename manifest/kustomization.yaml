@@ -4,13 +4,12 @@ kind: Kustomization
 namespace: default
 
 resources:
-- ./deployment.yaml
-- ./service.yaml
-- ./ingress.yaml
-- ./sealed-secrets/sealed-tls.yaml
-- ./sealed-secrets/sealed-dockerconfig.yaml
+  - ./deployment.yaml
+  - ./service.yaml
+  - ./ingress.yaml
+  - ./sealed-secrets/sealed-tls.yaml
 
 images:
-- name: bn256-portfolio
-  newName: ghcr.io/blancnoir256/portfolio-v2-application
-  newTag: 0.1.4
+  - name: bn256-portfolio
+    newName: ghcr.io/blancnoir256/portfolio-v2-application
+    newTag: 0.1.4
